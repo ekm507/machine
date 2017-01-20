@@ -12,13 +12,11 @@ machine
 #include <fstream>
 
 #include "hardware.hpp"
-#include "compiler.hpp"
 
 using namespace std;
 
 int main(int argc, char** argv)
 {
-
 	if(argc < 2)
 	{
 		std::cerr<<"usage : main <file-name>";
@@ -28,18 +26,14 @@ int main(int argc, char** argv)
 	cout << argv[1];
 
 	ifstream source;
-
 	source.open(argv[1]);
-
-
 	while(!source.eof())
 	{
-		string k;
+		char* k;
 		source >> k;
-		program_meory[program_size]=compile(k);
-		program_size++;
+		std::cout<<k;
 	}
-
+	
 	source.close();
 	return 0;
 }

@@ -35,10 +35,3 @@ char* program_meory;
 //we can store some of this in hard disk if it is too large. 
 // but I don't think so!
 //yet we should notice everything . so it is a todo! !<<<<<<<<TODO>>>>>>>!
-
-unsigned long long program_size=0;
-//program size (auto calculate in main)
-//(per words used as bytes)
-
-
-
