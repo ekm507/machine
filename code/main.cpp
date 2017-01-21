@@ -1,6 +1,7 @@
 // 95-11-1
 // Erfan Kheyrollahi ekm507@chmail.ir
 // Virtual Machine (this is emulation, not simulation).
+//TODO:make comments. these codes are so sensitive and forgetable.
 
 /*
 
@@ -26,6 +27,8 @@ int main(int argc, char** argv)
 	}
 
 	cout << argv[1];
+	
+	define_codes();
 
 	ifstream source;
 
