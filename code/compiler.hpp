@@ -3,7 +3,7 @@
 #include <map>
 #include <string>
 
-typedef std::map<std::string, std::pair<long long, int> > code_list_type;
+typedef std::map<std::string, std::pair<char, int> > code_list_type;
 //type used for defining ASM codes meanings and arguent numbers.
 
 code_list_type code_list;
@@ -21,7 +21,7 @@ int ignore_number=0;
 void define_codes()
 {
 
-code_list["nop"]=std::pair<long long, int>(long long(0), int(0));
+code_list["nop"]=std::pair<char, int>(char(0), int(0));
 //no-operation command.
 //it is used to debug a program,
 //or in old machines to give them a rest in start time.
@@ -29,18 +29,18 @@ code_list["nop"]=std::pair<long long, int>(long long(0), int(0));
 }
 ///////////////////////////////////////////////////////////////
 
-//function to convert ascii long longacter '0' or '1' ... '9' into int num 0 or 1 ... 9 . 
-int ascii_to_num(long long ascii_num)
+//function to convert ascii character '0' or '1' ... '9' into int num 0 or 1 ... 9 . 
+int ascii_to_num(char ascii_num)
 {
 	return ascii_num-48;
-	//ascii number of long longacter '0' is 48
+	//ascii number of character '0' is 48
 }
 
 //function to convert string showing a number,
-// like "283" into long long (monobyte int) number 283.
-long long string_to_bin(std::string code_given)
+// like "283" into char (monobyte int) number 283.
+char string_to_bin(std::string code_given)
 {
-	long long resault=0;
+	char resault=0;
 	//resault of the function
 
 	for(int i=0; i<code_given.size() ; i++)
@@ -54,9 +54,9 @@ long long string_to_bin(std::string code_given)
 
 //function below gets a stream of code words and returns their binary
 //simply and nicely!
-long long compile(std::string code_given)
+char compile(std::string code_given)
 {
-	long long resault;
+	char resault;
 	//resault of the function
 
 	//detect if given code will be a command or an arguent of a command.
