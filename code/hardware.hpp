@@ -17,10 +17,10 @@ const unsigned long long STACK_SIZE=120;
 //if you set this a short number, it's so near to get a stackoverflow.
 
 
-char ram[RAM_SIZE];
+long long ram[RAM_SIZE];
 //our machine's ram.
 
-char cpu_register[REGISTER_SIZE];
+long long cpu_register[REGISTER_SIZE];
 //register emory of our machine's CPU.
 
 unsigned long long stack[STACK_SIZE];
@@ -30,7 +30,7 @@ unsigned long long stack_pointer=0;
 //this shows the last address of the stack. 
 //we assume that numbers bigger than this are out of stack.
 
-char* program_meory;
+long long* program_meory;
 //memory used to store the program. ew have a lot to do with this!
 //we can store some of this in hard disk if it is too large. 
 // but I don't think so!
