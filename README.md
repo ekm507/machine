@@ -1,8 +1,2 @@
-# machine
-a custom machine emulator.
-
-this branch has an 8 bit machine emulator.
-
-there is a 64 bit machine in branch 'master64' too.
-
-have fun :)
+64 bit and 8 bit are both avilable.
+difference is with the 'char' type and the 'long long' type.
