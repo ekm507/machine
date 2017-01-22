@@ -1,5 +1,8 @@
 //hardware properties and things.
 
+//THIS IS AN 8-BIT MACHINE.
+//a 64-bit machine is also avilable in branch 'master64'.
+
 /// consts to set machine properties.
 
 const unsigned long long RAM_SIZE=3000;
@@ -41,9 +44,23 @@ unsigned long long program_size=0;
 //(per words used as bytes)
 
 
+
+
+//DESIGN THE CPU REGISTER MEMORY
 /*
 ........DESIGN THE REGISTER MEMORY......
 	register memory consists of variables , flags and some other thing.
 	to be able to use this memory we should design it first.
 
+with register:
+[A]:--------
+[A]:12345678
+..
+
+[0]:
+	[1]:set: if program wants to be closed.
+[1]:
+	
 */
+
+

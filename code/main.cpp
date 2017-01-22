@@ -68,7 +68,7 @@ int main(int argc, char** argv)
 	//maybe add some more options further.
 
 
-	interprete();
+	interpret();
 
 
 	return 0;
