@@ -14,6 +14,7 @@ machine
 
 #include "hardware.hpp"
 #include "compiler.hpp"
+#include "interpreter.hpp"
 
 using namespace std;
 
@@ -64,6 +65,11 @@ int main(int argc, char** argv)
 		//we have written the compiled version,
 		// of the program in our ram. so we don't need the source much more!.
 	}
+	//maybe add some more options further.
+
+
+	interprete();
+
 
 	return 0;
 	//it means that program has worked properly.

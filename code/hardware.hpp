@@ -41,4 +41,9 @@ unsigned long long program_size=0;
 //(per words used as bytes)
 
 
+/*
+........DESIGN THE REGISTER MEMORY......
+	register memory consists of variables , flags and some other thing.
+	to be able to use this memory we should design it first.
 
+*/
